@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topNav {
+    width: 80vw;
+    height: 10vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 5px 5px rgb(235, 235, 235);
+    border-radius: 20px;
+    margin-top: 2vh;
+    transition: box-shadow 0.8s linear;
+}
+
+.topNav:hover {
+    width: 80vw;
+    height: 10vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 10px 10px rgb(235, 235, 235);
+    border-radius: 20px;
+    margin-top: 2vh;
+    transition: box-shadow 0.2s linear;
+}
+
+.title {
+    text-align: center;
+    h1 {
+        color: #fff;
+        font-size: 9vh;
+        font-family: "ubuntu";
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: "Josefin Sans", sans-serif;
+        background: linear-gradient(to right, #ffa3ab 10%, rgb(123, 255, 233) 50%, #ffa3ab 60%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 3.5s linear infinite;
+        display: inline-block;
+    }
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
