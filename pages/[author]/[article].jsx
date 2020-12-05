@@ -18,16 +18,27 @@ export default function IndexPage({ res }) {
         <link rel="stylesheet" href="assets/css/index.css" />
       </HEAD>
       <div className="mainContentArea">
-        <div dangerouslySetInnerHTML={{ __html: html }} className="contentHolder" />
+        <div
+          dangerouslySetInnerHTML={{ __html: html }}
+          className="contentHolder"
+        />
       </div>
     </>
   );
 }
 
 IndexPage.getInitialProps = async (ctx) => {
+  var author = ctx.query.author;
+  var article = ctx.query.article;
+
   const res = await fetch(
-    "https://raw.githubusercontent.com/jaykumarM5/Adrishta-Hackathon-Template/master/README.md"
+    "https://raw.githubusercontent.com/" +
+      author +
+      "/edition-semicolon-articles/master/" +
+      article +
+      ".md"
   ).then((x) => x.text());
+  console.log(res);
   // const todos = await res.json();
   return { res };
 };
