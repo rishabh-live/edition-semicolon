@@ -25,11 +25,11 @@ export default function IndexPage({ res }) {
         </div>
       </div>
       <div className="mainContentArea">
-        <div id="btn">
-          <span class="noselect">Preview</span>
+        <div id="btn" className="preview">
+          <span class="noselect" >Preview</span>
           <div id="circle"></div>
         </div>{" "}
-        <div id="btn">
+        <div id="btn" className="publish">
           <span class="noselect">Publish</span>
           <div id="circle"></div>
         </div>
