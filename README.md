@@ -1,5 +1,7 @@
 # Edition Semicolon
----
+
+<hr>
+
 ## About
 
 Edition Semicolon is a free paltform to write articles without needing an account.
