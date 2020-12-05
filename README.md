@@ -1,30 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Edition Semicolon
 
-## Getting Started
+## About
 
-First, run the development server:
+Edition Semicolon is a free paltform to write articles without needing an account.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Edition Semicolon dosent use to store any data and articles. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It is not dependent on classical Database System to store Articles.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+It uses IPFS to store the documents.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## URLs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1) <a href="https://edition-semicolon.rishabh.live/" target="_blank">https://edition-semicolon.rishabh.live/ (Home Page)</a>
+2) <a href="https://edition-semicolon.rishabh.live/rishabh-live" target="_blank">https://edition-semicolon.rishabh.live/{your-github-username} (Your Github Special ReadMe Page)</a>
+3) <a href="https://edition-semicolon.rishabh.live/rishabh-live/sample-article" target="_blank">https://edition-semicolon.rishabh.live/{your-github-username}/{article-name} (Your article stored in github special repository in edition-smeicolon articles)</a>
+4) <a href="https://edition-semicolon.rishabh.live/r/QmHash" target="_blank">https://edition-semicolon.rishabh.live/r/{article-id} (The Open Article Page)</a>
+5) <a href="https://edition-semicolon.rishabh.live/create" target="_blank">https://edition-semicolon.rishabh.live/create (The Open Article Write Page) (under prgress)</a>
+6) <a href="https://edition-semicolon.rishabh.live/wiki/rishabh-live/edition-semicolon" target="_blank">https://edition-semicolon.rishabh.live/wiki/{github-org-name}/{name-of-repo} (The Wiki Page of a github repo)</a>
+7) <a href="https://edition-semicolon.rishabh.live/wiki/rishabh-live/edition-semicolon/master" target="_blank">https://edition-semicolon.rishabh.live/wiki/{github-org-name}/{name-of-repo}/{branch-of-repo-other-than-master} (The Wiki Page of a github repo other than master)</a>
