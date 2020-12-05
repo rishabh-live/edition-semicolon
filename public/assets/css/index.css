@@ -225,105 +225,98 @@
             animation: textclip 3.5s linear infinite;
     display: inline-block;
   }
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
+  @-webkit-keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
   }
-}
-
-.mainContentArea {
-  width: 96vw;
-  height: auto;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-box-shadow: 0px 0px 5px 5px #ebebeb;
-          box-shadow: 0px 0px 5px 5px #ebebeb;
-  border-radius: 20px;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  -webkit-transition: -webkit-box-shadow 0.8s linear;
-  transition: -webkit-box-shadow 0.8s linear;
-  transition: box-shadow 0.8s linear;
-  transition: box-shadow 0.8s linear, -webkit-box-shadow 0.8s linear;
-}
-
-.mainContentArea .contentHolder {
-  width: 90%;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.mainContentArea .contentHolder h1 {
-  color: #7c795d;
-  font-family: "Trocchi", serif;
-  font-size: 45px;
-  font-weight: normal;
-  line-height: 48px;
-  margin: 0;
-}
-
-.mainContentArea .contentHolder h2 {
-  color: #7c795d;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 32px;
-  margin: 0 0 24px;
-}
-
-.mainContentArea .contentHolder p {
-  color: #4c4a37;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  line-height: 32px;
-  margin: 0 0 24px;
-}
-
-.mainContentArea .contentHolder a {
-  color: #ff9900;
-  background: #fff4a3;
-  text-decoration: none;
-}
-
-.mainContentArea .contentHolder a:hover {
-  background-color: #ff9900;
-  color: white;
-}
-
-.mainContentArea .contentHolder img {
-  max-width: 100%;
-}
-
-.mainContentArea .contentHolder code {
-  background-color: #dddddd;
-  border-radius: 5%;
-  min-width: 100%;
-}
-
-.mainContentArea .contentHolder #TeaxtArea {
-  height: 50vh;
-  max-width: 600px;
-  color: #999;
-  font-weight: 400;
-  font-size: 30px;
-  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-  width: 100%;
-  background: #fff;
-  border-radius: 3px;
-  line-height: 2em;
-  border: none;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  -webkit-transition: height 2s ease;
-  transition: height 2s ease;
-}
-
-.mainContentArea .contentHolder * {
-  -webkit-font-smoothing: antialiased !important;
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  .mainContentArea {
+    width: 96vw;
+    height: auto;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-shadow: 0px 0px 5px 5px #ebebeb;
+            box-shadow: 0px 0px 5px 5px #ebebeb;
+    border-radius: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    -webkit-transition: -webkit-box-shadow 0.8s linear;
+    transition: -webkit-box-shadow 0.8s linear;
+    transition: box-shadow 0.8s linear;
+    transition: box-shadow 0.8s linear, -webkit-box-shadow 0.8s linear;
+  }
+  .mainContentArea .contentHolder {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .mainContentArea .contentHolder h1 {
+    color: #7c795d;
+    font-family: "Trocchi", serif;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
+  }
+  .mainContentArea .contentHolder h2 {
+    color: #7c795d;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0 0 24px;
+  }
+  .mainContentArea .contentHolder p {
+    color: #4c4a37;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 0 24px;
+  }
+  .mainContentArea .contentHolder a {
+    color: #ff9900;
+    background: #fff4a3;
+    text-decoration: none;
+  }
+  .mainContentArea .contentHolder a:hover {
+    background-color: #ff9900;
+    color: white;
+  }
+  .mainContentArea .contentHolder img {
+    max-width: 100%;
+  }
+  .mainContentArea .contentHolder code {
+    background-color: #dddddd;
+    border-radius: 5%;
+    min-width: 100%;
+  }
+  .mainContentArea .contentHolder #TeaxtArea {
+    height: 50vh;
+    max-width: 600px;
+    color: #999;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    line-height: 2em;
+    border: none;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    -webkit-transition: height 2s ease;
+    transition: height 2s ease;
+  }
+  .mainContentArea .contentHolder * {
+    -webkit-font-smoothing: antialiased !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */

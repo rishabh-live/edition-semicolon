@@ -181,91 +181,89 @@
             display: inline-block;
         }
     }
-}
-
-@keyframes textclip {
-    to {
-        background-position: 200% center;
+    @keyframes textclip {
+        to {
+            background-position: 200% center;
+        }
     }
-}
-
-.mainContentArea {
-    width: 96vw;
-    height: auto;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0px 0px 5px 5px rgb(235, 235, 235);
-    border-radius: 20px;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    transition: box-shadow 0.8s linear;
-    .contentHolder {
-        width: 90%;
-        margin: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        h1 {
-            color: #7c795d;
-            font-family: "Trocchi", serif;
-            font-size: 45px;
-            font-weight: normal;
-            line-height: 48px;
-            margin: 0;
-        }
-        h2 {
-            color: #7c795d;
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 28px;
-            font-weight: 400;
-            line-height: 32px;
-            margin: 0 0 24px;
-        }
-        p {
-            color: #4c4a37;
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: 18px;
-            line-height: 32px;
-            margin: 0 0 24px;
-        }
-        a {
-            color: #ff9900;
-            background: #fff4a3;
-            text-decoration: none;
-        }
-        a:hover {
-            background-color: #ff9900;
-            color: white;
-        }
-        img {
-            max-width: 100%;
-        }
-        code {
-            background-color: #dddddd;
-            border-radius: 5%;
-            min-width: 100%;
-        }
-        #TeaxtArea {
-            height: 50vh;
-            max-width: 600px;
-            color: #999;
-            font-weight: 400;
-            font-size: 30px;
-            font-family: "Ubuntu", Helvetica, Arial, sans-serif;
-            width: 100%;
-            background: #fff;
-            border-radius: 3px;
-            line-height: 2em;
-            border: none;
-            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            -webkit-transition: height 2s ease;
-            -moz-transition: height 2s ease;
-            -ms-transition: height 2s ease;
-            -o-transition: height 2s ease;
-            transition: height 2s ease;
-        }
-        * {
-            -webkit-font-smoothing: antialiased !important;
+    .mainContentArea {
+        width: 96vw;
+        height: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 0px 5px 5px rgb(235, 235, 235);
+        border-radius: 20px;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        transition: box-shadow 0.8s linear;
+        .contentHolder {
+            width: 90%;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            h1 {
+                color: #7c795d;
+                font-family: "Trocchi", serif;
+                font-size: 45px;
+                font-weight: normal;
+                line-height: 48px;
+                margin: 0;
+            }
+            h2 {
+                color: #7c795d;
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 32px;
+                margin: 0 0 24px;
+            }
+            p {
+                color: #4c4a37;
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 18px;
+                line-height: 32px;
+                margin: 0 0 24px;
+            }
+            a {
+                color: #ff9900;
+                background: #fff4a3;
+                text-decoration: none;
+            }
+            a:hover {
+                background-color: #ff9900;
+                color: white;
+            }
+            img {
+                max-width: 100%;
+            }
+            code {
+                background-color: #dddddd;
+                border-radius: 5%;
+                min-width: 100%;
+            }
+            #TeaxtArea {
+                height: 50vh;
+                max-width: 600px;
+                color: #999;
+                font-weight: 400;
+                font-size: 30px;
+                font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+                width: 100%;
+                background: #fff;
+                border-radius: 3px;
+                line-height: 2em;
+                border: none;
+                box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+                padding: 30px;
+                -webkit-transition: height 2s ease;
+                -moz-transition: height 2s ease;
+                -ms-transition: height 2s ease;
+                -o-transition: height 2s ease;
+                transition: height 2s ease;
+            }
+            * {
+                -webkit-font-smoothing: antialiased !important;
+            }
         }
     }
 }
