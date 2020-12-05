@@ -34,9 +34,9 @@ IndexPage.getInitialProps = async (ctx) => {
   const res = await fetch(
     "https://raw.githubusercontent.com/" +
       author +
-      "/edition-semicolon-articles/master/" +
+      "/" +
       article +
-      ".md"
+      "/master/README.md"
   ).then((x) => x.text());
   console.log(res);
   // const todos = await res.json();
