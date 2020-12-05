@@ -90,9 +90,11 @@
 }
 
 .mainContentArea .contentHolder {
-  width: 90%;
+  max-width: 90%;
   margin: auto;
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50vh;
 }
 
 .mainContentArea .contentHolder h1 {
@@ -142,9 +144,9 @@
   min-width: 100%;
 }
 
-.mainContentArea .contentHolder #TeaxtArea {
+#TextArea {
+  padding: 8px;
   height: 50vh;
-  max-width: 600px;
   color: #999;
   font-weight: 400;
   font-size: 30px;
@@ -154,14 +156,75 @@
   border-radius: 3px;
   line-height: 2em;
   border: none;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   padding: 30px;
   -webkit-transition: height 2s ease;
   transition: height 2s ease;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
 }
 
-.mainContentArea .contentHolder * {
+* {
   -webkit-font-smoothing: antialiased !important;
 }
-/*# sourceMappingURL=index.css.map */
+
+#btn {
+  background: #2cbdd6;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  color: #eee;
+  font-size: 40px;
+  font-family: 'Cookie', cursive;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-top: 1vh;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: #2cd657;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#btn:hover {
+  background: #2cd657;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
+/*# sourceMappingURL=create.css.map */
