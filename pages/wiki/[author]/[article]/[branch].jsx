@@ -18,16 +18,30 @@ export default function IndexPage({ res }) {
         <link rel="stylesheet" href="assets/css/index.css" />
       </HEAD>
       <div className="mainContentArea">
-        <div dangerouslySetInnerHTML={{ __html: html }} className="contentHolder" />
+        <div
+          dangerouslySetInnerHTML={{ __html: html }}
+          className="contentHolder"
+        />
       </div>
     </>
   );
 }
 
 IndexPage.getInitialProps = async (ctx) => {
+  var author = ctx.query.author;
+  var article = ctx.query.article;
+  var branch = ctx.query.branch;
+
   const res = await fetch(
-    "https://raw.githubusercontent.com/rishabh-live/edition-semicolon/master/README.md"
+    "https://raw.githubusercontent.com/" +
+      author +
+      "/" +
+      article +
+      "/" +
+      branch +
+      "/README.md"
   ).then((x) => x.text());
+  console.log(res);
   // const todos = await res.json();
   return { res };
 };
