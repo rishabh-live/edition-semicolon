@@ -10,7 +10,9 @@ Edition Semicolon dosent use to store any data and articles.
 
 It is not dependent on classical Database System to store Articles.
 
-It uses IPFS to store the documents.
+It uses Inter-Planetry File System to store the documents, making the article available to anyone on the globe.
+
+The magazine is built to support the Free Speech Rights, threatened by few goverments in the world.
 
 
 ## URLs
@@ -22,3 +24,5 @@ It uses IPFS to store the documents.
 5) <a href="https://edition-semicolon.rishabh.live/create" target="_blank">https://edition-semicolon.rishabh.live/create (The Open Article Write Page) (under prgress)</a>
 6) <a href="https://edition-semicolon.rishabh.live/wiki/rishabh-live/edition-semicolon" target="_blank">https://edition-semicolon.rishabh.live/wiki/{github-org-name}/{name-of-repo} (The Wiki Page of a github repo)</a>
 7) <a href="https://edition-semicolon.rishabh.live/wiki/rishabh-live/edition-semicolon/master" target="_blank">https://edition-semicolon.rishabh.live/wiki/{github-org-name}/{name-of-repo}/{branch-of-repo-other-than-master} (The Wiki Page of a github repo other than master)</a>
+
+## Screenshots
