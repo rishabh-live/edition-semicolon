@@ -8,14 +8,14 @@ export default async (req, res) => {
     protocol: "https",
   });
 
-  
-
   if (req.method == "POST") {
+    console.log("Its POST Method");
     var parsedBody = JSON.parse(req.body);
     var content = parsedBody.cnt;
-    var file = ipfs.add(content);
+    var file = await ipfs.add(content);
     res.json({ id: file.path });
   } else {
-    res.status(401);
+    console.log("Its non POST Method");
+    res.json({status: 401});
   }
 };
