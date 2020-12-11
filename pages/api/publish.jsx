@@ -8,9 +8,10 @@ export default async (req, res) => {
     protocol: "https",
   });
 
-  var parsedBody = JSON.parse(req.body);
+  
 
   if (req.method == "POST") {
+    var parsedBody = JSON.parse(req.body);
     var content = parsedBody.cnt;
     var file = ipfs.add(content);
     res.json({ id: file.path });
