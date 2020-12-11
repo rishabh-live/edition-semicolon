@@ -4,13 +4,14 @@
 //     port: "5001",
 //     protocol: "https",
 // });
-const content = document.querySelector('.contentHolder').value;
-const previewBtn = document.querySelector('.preview');
-console.log("Log : " +
-    content);
-previewBtn.onclick = function() {
-
+window.onload = function() {
+    var content = document.getElementById("TextArea").value;
+    const previewBtn = document.querySelector('.preview');
     console.log("Log : " +
         content);
-}
-console.log("Log : Its Working ");
+    previewBtn.onclick = function() {
+
+        console.log("Log : " + content + " : Loaded");
+    }
+    console.log("Log : Its Working ");
+};

@@ -20,13 +20,13 @@ export default function IndexPage({ res }) {
               ng-keyup="autoExpand($event)"
               placeholder="Start Writing in Markdown to share with the world..."
               className="contentHolder"
-            ></textarea>
+            />
           </div>
         </div>
       </div>
       <div className="mainContentArea">
         <div id="btn" className="preview">
-          <span class="noselect" >Preview</span>
+          <span class="noselect">Preview</span>
           <div id="circle"></div>
         </div>{" "}
         <div id="btn" className="publish">
@@ -36,6 +36,7 @@ export default function IndexPage({ res }) {
       </div>
       <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
       <script src="/assets/js/ipfs-upload.js"></script>
+      <script src="/assets/js/textarea.js"></script>
     </>
   );
 }
