@@ -1,4 +1,9 @@
 import HEAD from "next/head";
+const IpfsHttpClient = require("ipfs-http-client");
+
+function publish() {
+  console.log("Success");
+}
 
 export default function IndexPage({ res }) {
   return (
@@ -25,12 +30,8 @@ export default function IndexPage({ res }) {
         </div>
       </div>
       <div className="mainContentArea">
-        <div id="btn" className="preview">
-          <span class="noselect">Preview</span>
-          <div id="circle"></div>
-        </div>{" "}
         <div id="btn" className="publish">
-          <span class="noselect">Publish</span>
+          <button class="noselect" onClick={publish()}>Publish To IPFS</button>
           <div id="circle"></div>
         </div>
       </div>
