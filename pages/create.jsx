@@ -1,8 +1,9 @@
 import HEAD from "next/head";
 const IpfsHttpClient = require("ipfs-http-client");
 
-function publish() {
+const publish = (e) => {
   console.log("Success");
+  console.log(e)
 }
 
 export default function IndexPage({ res }) {
@@ -31,7 +32,7 @@ export default function IndexPage({ res }) {
       </div>
       <div className="mainContentArea">
         <div id="btn" className="publish">
-          <button class="noselect" onClick={publish()}>Publish To IPFS</button>
+          <button class="noselect" onClick={publish}>Publish To IPFS</button>
           <div id="circle"></div>
         </div>
       </div>
