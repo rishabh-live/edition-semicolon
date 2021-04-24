@@ -19,7 +19,7 @@ export default function IndexPage({ res }) {
 
     var url = "https://edition-semicolon.rishabh.live/r/" + file.path;
 
-    window.open(url, "_blank", "location=yes,scrollbars=yes,status=yes");
+    window.open(url, "_blank").focus();
 
     // console.log(state.article);
     // console.log(state.title);
