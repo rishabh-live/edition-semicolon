@@ -1,4 +1,5 @@
 import HEAD from "next/head";
+import React, { useEffect, useState } from "react";
 const IpfsHttpClient = require("ipfs-http-client");
 
 export default function IndexPage({ res }) {
@@ -7,7 +8,7 @@ export default function IndexPage({ res }) {
     title: "A very Awesome Title",
   });
 
-  
+
 
   let publish = (e) => {
     // const ipfs = IpfsHttpClient({
