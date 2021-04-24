@@ -9,17 +9,21 @@ export default function IndexPage({ res }) {
   });
 
   let publish = (e) => {
-    // const ipfs = IpfsHttpClient({
-    //   timeout: 10000,
-    //   host: "ipfs.infura.io",
-    //   port: "5001",
-    //   protocol: "https",
-    // });
-    // var file = await ipfs.add(content);
-    // return
+    const ipfs = IpfsHttpClient({
+      timeout: 10000,
+      host: "ipfs.infura.io",
+      port: "5001",
+      protocol: "https",
+    });
+    var file = await ipfs.add(state.article);
 
-    console.log(state.article);
-    console.log(state.title);
+    var url = "https://edition-semicolon.rishabh.live/r/"+file.path;
+    
+
+    window.open(url, '_blank', 'location=yes,scrollbars=yes,status=yes');
+
+    // console.log(state.article);
+    // console.log(state.title);
   };
 
   function handleArticleChange(e) {
