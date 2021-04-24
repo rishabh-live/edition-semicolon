@@ -20,8 +20,8 @@ export default function IndexPage({ res }) {
     // var file = await ipfs.add(content);
     // return
 
-    console.log(this.state.article);
-    console.log(this.state.title);
+    console.log(state.article);
+    console.log(state.title);
   };
 
   return (
