@@ -61,7 +61,7 @@ export default function IndexPage({ res }) {
         <div id="btn" className="publish">
           <button
             class="noselect"
-            style={{ background: "none", border: "none", fontSize: "30px" }}
+            style={{ background: "none", border: "none", fontSize: "20px", cursor: "copy", color: "white" }}
             onClick={publish}
           >
             Publish To IPFS
