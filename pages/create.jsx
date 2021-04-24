@@ -22,9 +22,9 @@ export default function IndexPage({ res }) {
     console.log(state.title);
   };
 
-  function handleArticleChange(e){
+  function handleArticleChange(e) {
     setstate({
-      article: e.target.value
+      article: e.target.value,
     });
   }
 
@@ -53,9 +53,28 @@ export default function IndexPage({ res }) {
           </div>
         </div>
       </div>
+
+      <div className="mainContentArea">
+        <div ng-app="myApp">
+          <div ng-controller="AppCtrl" align="center">
+            <input
+              type="text"
+              id="title"
+              placeholder="Give an awesome title"
+              className="contentHolder"
+              value={state.article}
+              onChange={handleArticleChange}
+            />
+          </div>
+        </div>
+      </div>
       <div className="mainContentArea">
         <div id="btn" className="publish">
-          <button class="noselect" onClick={publish}>
+          <button
+            class="noselect"
+            style={{ background: none }}
+            onClick={publish}
+          >
             Publish To IPFS
           </button>
           <div id="circle"></div>
