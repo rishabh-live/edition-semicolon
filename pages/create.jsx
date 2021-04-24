@@ -2,10 +2,12 @@ import HEAD from "next/head";
 const IpfsHttpClient = require("ipfs-http-client");
 
 export default function IndexPage({ res }) {
-  state = {
+  const [state, setstate] = useState({
     article: "A very awesome article.",
     title: "A very Awesome Title",
-  };
+  });
+
+  
 
   let publish = (e) => {
     // const ipfs = IpfsHttpClient({
