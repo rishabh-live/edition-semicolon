@@ -1,12 +1,26 @@
 import HEAD from "next/head";
 const IpfsHttpClient = require("ipfs-http-client");
 
-const publish = (e) => {
-  console.log("Success");
-  console.log(e)
-}
-
 export default function IndexPage({ res }) {
+  this.state = {
+    article: "A very awesome article.",
+    title: "A very Awesome Title",
+  };
+
+  let publish = (e) => {
+    // const ipfs = IpfsHttpClient({
+    //   timeout: 10000,
+    //   host: "ipfs.infura.io",
+    //   port: "5001",
+    //   protocol: "https",
+    // });
+    // var file = await ipfs.add(content);
+    // return
+
+    console.log(this.state.article);
+    console.log(this.state.title);
+  };
+
   return (
     <>
       <HEAD>
@@ -26,13 +40,16 @@ export default function IndexPage({ res }) {
               ng-keyup="autoExpand($event)"
               placeholder="Start Writing in Markdown to share with the world..."
               className="contentHolder"
+              value={this.state.article}
             />
           </div>
         </div>
       </div>
       <div className="mainContentArea">
         <div id="btn" className="publish">
-          <button class="noselect" onClick={publish}>Publish To IPFS</button>
+          <button class="noselect" onClick={publish}>
+            Publish To IPFS
+          </button>
           <div id="circle"></div>
         </div>
       </div>
