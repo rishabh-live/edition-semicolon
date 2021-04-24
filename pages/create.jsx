@@ -2,7 +2,7 @@ import HEAD from "next/head";
 const IpfsHttpClient = require("ipfs-http-client");
 
 export default function IndexPage({ res }) {
-  this.state = {
+  state = {
     article: "A very awesome article.",
     title: "A very Awesome Title",
   };
