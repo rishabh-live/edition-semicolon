@@ -27,7 +27,7 @@ The magazine is built to support the Free Speech Rights, threatened by few gover
 
 ## Screenshots
 
-1) Visit <a href="https://https://edition-semicolon.rishabh.live/create">https://edition-semicolon.rishabh.live/create</a><br>
+1) Visit <a href="https://edition-semicolon.rishabh.live/create">https://edition-semicolon.rishabh.live/create</a><br>
 <img src="https://edition-semicolon.rishabh.live/images/1.png">
 
 2) Write your favourite article with or without markdown<br>
