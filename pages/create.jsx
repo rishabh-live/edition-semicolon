@@ -72,7 +72,7 @@ export default function IndexPage({ res }) {
         <div id="btn" className="publish">
           <button
             class="noselect"
-            style={{ background: none }}
+            style={{ background=none}}
             onClick={publish}
           >
             Publish To IPFS
