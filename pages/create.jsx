@@ -3,12 +3,10 @@ import React, { useEffect, useState } from "react";
 const IpfsHttpClient = require("ipfs-http-client");
 
 export default function IndexPage({ res }) {
-  const [state, setstate] = useState({
+  let [state, setstate] = useState({
     article: "A very awesome article.",
     title: "A very Awesome Title",
   });
-
-
 
   let publish = (e) => {
     // const ipfs = IpfsHttpClient({
@@ -23,6 +21,12 @@ export default function IndexPage({ res }) {
     console.log(state.article);
     console.log(state.title);
   };
+
+  function handleArticleChange(e){
+    setstate({
+      article: e.target.value
+    });
+  }
 
   return (
     <>
@@ -43,7 +47,8 @@ export default function IndexPage({ res }) {
               ng-keyup="autoExpand($event)"
               placeholder="Start Writing in Markdown to share with the world..."
               className="contentHolder"
-              value={this.state.article}
+              value={state.article}
+              onChange={handleArticleChange}
             />
           </div>
         </div>
