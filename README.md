@@ -26,3 +26,15 @@ The magazine is built to support the Free Speech Rights, threatened by few gover
 7) <a href="https://edition-semicolon.rishabh.live/wiki/rishabh-live/edition-semicolon/master" target="_blank">https://edition-semicolon.rishabh.live/wiki/{github-org-name}/{name-of-repo}/{branch-of-repo-other-than-master} (The Wiki Page of a github repo other than master)</a>
 
 ## Screenshots
+
+1) Visit <a href="https://https://edition-semicolon.rishabh.live/create">https://edition-semicolon.rishabh.live/create</a><br>
+<img src="https://edition-semicolon.rishabh.live/images/1.png">
+
+2) Write your favourite article with or without markdown<br>
+<img src="https://edition-semicolon.rishabh.live/images/2.png">
+
+3) Click on Publish to IPFS button<br>
+<img src="https://edition-semicolon.rishabh.live/images/3.png">
+
+4) Read and share your article with anyone<br>
+<img src="https://edition-semicolon.rishabh.live/images/4.png">
