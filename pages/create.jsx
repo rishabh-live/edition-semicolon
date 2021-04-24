@@ -55,24 +55,10 @@ export default function IndexPage({ res }) {
       </div>
 
       <div className="mainContentArea">
-        <div ng-app="myApp">
-          <div ng-controller="AppCtrl" align="center">
-            <input
-              type="text"
-              id="title"
-              placeholder="Give an awesome title"
-              className="contentHolder"
-              value={state.article}
-              onChange={handleArticleChange}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="mainContentArea">
         <div id="btn" className="publish">
           <button
             class="noselect"
-            style={{ background:"none"}}
+            style={{ background: "none", border: "none", fontSize: "30px" }}
             onClick={publish}
           >
             Publish To IPFS
