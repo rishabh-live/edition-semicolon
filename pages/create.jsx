@@ -8,7 +8,7 @@ export default function IndexPage({ res }) {
     title: "A very Awesome Title",
   });
 
-  let publish = (e) => {
+  let publish = async () => {
     const ipfs = IpfsHttpClient({
       timeout: 10000,
       host: "ipfs.infura.io",
@@ -17,10 +17,9 @@ export default function IndexPage({ res }) {
     });
     var file = await ipfs.add(state.article);
 
-    var url = "https://edition-semicolon.rishabh.live/r/"+file.path;
-    
+    var url = "https://edition-semicolon.rishabh.live/r/" + file.path;
 
-    window.open(url, '_blank', 'location=yes,scrollbars=yes,status=yes');
+    window.open(url, "_blank", "location=yes,scrollbars=yes,status=yes");
 
     // console.log(state.article);
     // console.log(state.title);
